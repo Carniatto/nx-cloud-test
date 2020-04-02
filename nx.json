@@ -9,7 +9,8 @@
   },
   "projects": {
     "rpm-goal-e2e": {
-      "tags": []
+      "tags": [],
+      "implicitDependencies": ["rpm-goal"]
     },
     "rpm-goal": {
       "tags": []
@@ -26,12 +27,7 @@
       "runner": "@nrwl/nx-cloud",
       "options": {
         "accessToken": "ODgyMWQ1NDktNTE2OS00MjVjLTg1ODQtNDFmMzYxNGNkMWU1fHJlYWQ=",
-        "cacheableOperations": [
-          "build",
-          "test",
-          "lint",
-          "e2e"
-        ]
+        "cacheableOperations": ["build", "test", "lint", "e2e"]
       }
     }
   }
