@@ -20,7 +20,7 @@
             "main": "apps/rpm-goal/src/main.ts",
             "polyfills": "apps/rpm-goal/src/polyfills.ts",
             "tsConfig": "apps/rpm-goal/tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "apps/rpm-goal/src/favicon.ico",
               "apps/rpm-goal/src/assets"
@@ -41,7 +41,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
