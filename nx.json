@@ -1,0 +1,24 @@
+{
+  "npmScope": "nx-cloud-test",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "rpm-goal-e2e": {
+      "tags": []
+    },
+    "rpm-goal": {
+      "tags": []
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
+    }
+  }
+}
