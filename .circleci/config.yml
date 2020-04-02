@@ -1,0 +1,17 @@
+version: 2.1
+orbs:
+  node: circleci/node@1.1.6
+jobs:
+  - job: ci
+    timeoutInMinutes: 120
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+      - template: .azure-pipelines/steps/install-node-modules.yml
+      - script: yarn nx run-many --target=test --all
+      - script: yarn nx run-many --target=lint --all
+      - script: yarn nx run-many --target=build --all --prod
+workflows:
+    build-and-test:
+      jobs:
+        - ci
