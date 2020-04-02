@@ -20,5 +20,19 @@
     "api-interfaces": {
       "tags": []
     }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "accessToken": "ODgyMWQ1NDktNTE2OS00MjVjLTg1ODQtNDFmMzYxNGNkMWU1fHJlYWQ=",
+        "cacheableOperations": [
+          "build",
+          "test",
+          "lint",
+          "e2e"
+        ]
+      }
+    }
   }
 }
