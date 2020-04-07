@@ -60,7 +60,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@nrwl/web:dev-server",
           "options": {
             "browserTarget": "rpm-goal:build",
             "proxyConfig": "apps/rpm-goal/proxy.conf.json"
